@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: black;
+}
+
+
+.img-container{
+    width: 50%;
+    margin: 0 auto;
+}
+
+img{
+    max-width: 80%;
+}
+
+.container{
+    background-color:#4B5320;
+    color: #fff;
+
+    max-width: 100vw;
+    min-height: 100vh;
+    padding: 50px;
+
+    transition: transform 0.5s linear;
+
+    position: relative;
+}
+
+.container.navigation-visible{
+    transform: rotate(20deg);
+    transform-origin: top right;
+
+    transition: transform 0.5s linear;
+}
+
+.circle-container{
+    position: fixed;
+   
+    right: -150px;
+    top: -150px;
+    
+
+}
+
+.circle{
+    position: relative;
+    height: 300px;
+    width: 300px;
+
+    border-radius: 50%;
+    background-color: #fff;
+
+
+    transition: transform 0.5 linear;
+}
+
+.circle button{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+
+    height: 150px;
+    background: transparent;
+    border: 0;
+    font-size: 32px;
+    color: black;
+
+    cursor: pointer;
+}
+
+
+.circle button:focus{
+    outline: none;
+}
